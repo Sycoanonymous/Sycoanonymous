@@ -24,21 +24,11 @@ banner = """\033[36;1m
 m    m                mmmm                        ##  ##  m mm         #"   " m   m   mmm    mmm
  # ## #  #"  "        "#mmm  "m m"  #"  "  #" "#   # "" #  #                "#  #m#   #      #   #
  #    #  #            "mmm#"  "#    "#mm"  "#m#"                                m"
-                             ""  \\\033[1;97m:
+                             ""  \\
                      
      \x1b[1;97m Author   \033[31;1m:  \033[32mAuthenticXploit
-     \x1b[1;97m Type     \033[31;1m:  \033[32mBruteForce
-     \x1b[1;97m Version  \033[31;1m:  \033[32m0.3
-     \x1b[1;97m Contact  \033[31;1m:  \033[32mhttps://t.me/AuthenticXploit
-     \x1b[1;97m
-"""
-
-def slowprint(s):
-    for c in s + '\n':
-        sys.stdout.write(c)
-        sys.stdout.flush()
-        sleep(2.0 / 90)
-
+     \x1b[1;97m Type     \033[31
+     \x1b[1;97m Version  \033[31
 system("clear")
 slowprint(banner)
 email = str(raw_input("\033[37;1minput facebook target \033[31;1m: \033[33;1m"))
@@ -104,6 +94,4 @@ def menu():
 if __name__ == '__main__':
     try:
         main()
-    except(KeyboardInterrupt, EOFError):
-        print("\033[36;1m\n[\033[31;1m!\033[36;1m]\033[33;1mDetects a forced stop program \x1b[0m")
-        exit(0)
+    
